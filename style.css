@@ -310,21 +310,38 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    cursor: pointer;
+}
+
+.video:hover::before {
+    transform: translate(-50%, -50%) scale(1.08);
 }
 
 .video:after {
     content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-left: 30px solid #C9A066;
+      border-top: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+      scale: 1;
+      z-index: 2;
+      transition: opacity 0.3s ease;
+}
+
+.video:before {
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 30px solid #C9A066;
-    transform: rotate(-90deg);
-    cursor: pointer;
+    transform: translate(-50%, -50%) scale(1);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #C9A066;
+    transition: 0.3s ease;
 }
