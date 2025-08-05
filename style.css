@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fdfdfd;
+    font-family: "DM Sans", sans-serif;
+}
+
+.body {
+    background: #0e1618;
+}
+
+.header {
+    background-color: #0e1618;
+    display: flex;
+    align-items: center;
+    border-bottom: solid 1px #C6AC8359;
+}
+
+.header > * {
+    padding: 20px 0;
+}
+
+.header > a > img {
+    max-width: 186px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header > *:first-child {
+    width: 15%;
+    border-right: solid 1px #C6AC8359;
+}
+
+.header > nav {
+    width: 50%;
+}
+
+.header > nav > ul {
+    font-family: "Cormorant Infant", serif;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    line-height: 50px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    font-size: 15px;
+    list-style: none;
+}
+
+.header > nav > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.header > nav > ul > li > a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #c9a066;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.header > nav > ul > li > a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.header > .reserve-button {
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    line-height: 24pxs;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    text-decoration: none;
+    background-color: #c9a066;
+    margin-left: auto;
+    margin-right: 20px;
+    position: relative;
+    transition: transform .3s;
+}
+
+.header > .reserve-button > span {
+    position: relative;
+    z-index: 10;
+    transition: color .3s;
+}
+
+.header > .reserve-button:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #fdfdfd;
+    transform-origin: right bottom;
+    transform: scale(0);
+    transition: transform .3s;
+    animation-delay: 0.25s;
+}
+
+.header > .reserve-button:hover::before {
+    transform: scale(1);
+}
+
+.header > .reserve-button:hover span {
+    color: #c9a066;
+}
+
+/* Main view */
+
+.main-view-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/indoor.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-view-container > .main-view {
+    width: 77%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:flex-start;
+    gap: 29px;
+}
+
+
+.main-view > h3 {
+    font-family: "Cormorant Infant", serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    color: #c9a066;
+}
+
+.main-view > h1 {
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 75px;
+}
+
+.main-view > p {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.34px;
+    line-height: 28px;
+    width: 66%;
+}
+
+.main-view > button {
+    border: 1px solid #c9a066;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    line-height: 24pxs;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    text-decoration: none;
+    position: relative;
+    transition: transform .3s;
+}
