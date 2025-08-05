@@ -4,10 +4,35 @@
     padding: 0;
     color: #fdfdfd;
     font-family: "DM Sans", sans-serif;
+            -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+*:focus {
+    outline: none !important;
 }
 
 .body {
     background: #0e1618;
+}
+
+.cus-cursor {
+  width: 15px;
+  height: 15px;
+  position: fixed;
+  background-color: rgb(201, 160, 102);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(-50%);
+  left: -100px;
+  top: 50%;
+  z-index: 20;
+  transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55), opacity 0.2s ease;
 }
 
 .header {
