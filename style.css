@@ -180,3 +180,42 @@
     position: relative;
     transition: transform .3s;
 }
+
+.main-view > button:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: -12px;
+    bottom: -12px;
+    border-right: 1px solid #c9a066;
+    border-bottom: 1px solid #c9a066;
+    transform-origin: bottom right;
+    transform: translate(0, 0);
+    transition: transform .3s;
+    animation-delay: 0.25s;
+}
+
+.main-view > button:hover::before {
+    transform: translate(-12px, -12px);
+}
+
+.main-view > button:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #c9a066;
+    transform-origin: right bottom;
+    transform: scale(0);
+    transition: transform .3s;
+    transition-delay: 0.15s;
+}
+
+.main-view > button:hover::after {
+    transform: scale(1);
+}
+
+.main-view > button > span {
+    position: relative;
+    z-index: 10;
+}
