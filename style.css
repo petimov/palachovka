@@ -294,7 +294,7 @@ body {
 }
 
 .lock > div > img {
-    width: 300px;
-    height: 80px;
+    max-width: 300px;
+    max-height: 80px;
     margin: 0 auto;
 }
