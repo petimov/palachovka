@@ -344,8 +344,12 @@ footer {
     border-top: 1px solid #C6AC8359;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0 10%;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 5% 10%;
+    line-height: 27px;
+    color: #d1d5d7;
+    font-size: 15px;
 }
 
 footer img {
@@ -356,8 +360,8 @@ footer div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 20%;
+    padding: 0 38px;
 }
 
 .divider {
@@ -373,4 +377,8 @@ footer div h5 {
 
 footer div:not(:first-of-type) p:not(:nth-of-type(2n)) {
     color: #C9A066;
+}
+
+footer div *:not(p:nth-of-type(1)):not(p:nth-of-type(3)):not(p:nth-of-type(5)) {
+    margin-bottom: 20px;
 }
