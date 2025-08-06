@@ -248,21 +248,22 @@ body {
 .lock {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
+    align-items: center;
+    gap: 40px;
     text-align: center;
     padding: 100px 0;
     line-height: 26px;
+    color: #d1d5d7;
 }
 
 .lock > img {
-    max-width: 30%;
+    max-width: 25%;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
 }
 
 .lock > div {
-    width: 28%;
+    width: 22%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -273,7 +274,7 @@ body {
 .lock > div > h4, .lock > div > h5 {
   color: #C9A066;
   font-family: "Cormorant Infant", Sans-serif;
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   text-transform: none;
   font-style: italic;
@@ -282,9 +283,10 @@ body {
 
 .lock > div > h3 {
   font-family: "Playfair Display", serif;
-  font-size: 45px;
+  font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  margin-bottom: 24px;
 }
 
 .lock > div > span {
@@ -300,11 +302,15 @@ body {
 }
 
 .lock .divider {
-    width: 70%;
+    width: 67%;
     height: 1px;
     margin: 0 auto;
     background-color: #C9A066;
     position: relative;
+}
+
+.lock div:last-of-type .divider:last-of-type {
+    width: 20%;
 }
 
 .lock .divider-sqr {
@@ -313,8 +319,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -25%);
-    width: 15px;
-    height: 15px;
+    width: 18px;
+    height: 18px;
     border: .5px solid #C9A066;
     background-color: #0e16189b;
     backdrop-filter: blur(5px);
@@ -323,8 +329,8 @@ body {
 
 .lock .divider-sqr:after {
     content: '';
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
