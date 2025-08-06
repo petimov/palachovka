@@ -339,3 +339,38 @@ body {
 }
 
 /* Video */
+
+footer {
+    border-top: 1px solid #C6AC8359;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+}
+
+footer img {
+    max-width: 240px;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.divider {
+    background-color: #C9A066;
+    width: 20%;
+    height: 2px;
+}
+
+footer div h5 {
+    font-size: 26px;
+    font-family: "Cormorant Infant", Sans-serif;
+}
+
+footer div:not(:first-of-type) p:not(:nth-of-type(2n)) {
+    color: #C9A066;
+}
