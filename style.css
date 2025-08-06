@@ -299,4 +299,37 @@ body {
     margin: 0 auto;
 }
 
+.lock .divider {
+    width: 70%;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #C9A066;
+    position: relative;
+}
+
+.lock .divider-sqr {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 15px;
+    height: 15px;
+    border: .5px solid #C9A066;
+    background-color: #0e16189b;
+    backdrop-filter: blur(5px);
+    rotate: 45deg;
+}
+
+.lock .divider-sqr:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #C9A066;
+}
+
 /* Video */
