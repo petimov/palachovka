@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #fdfdfd;
+        color: #d1d5d7;
     font-family: "DM Sans", sans-serif;
             -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -250,7 +250,6 @@ section button > span {
     gap: 40px;
     text-align: center;
     padding: 100px 0;
-    color: #d1d5d7;
 }
 
 .lock > img {
@@ -357,8 +356,18 @@ section.meeting {
     justify-content: center;
     align-items: center;
     gap: 30px;
-    width: 74%;
+    padding: 0 12%;
     margin: 0 auto;
+    position: relative;
+}
+
+section.meeting:after {
+    content: url('/assets/vector.png');
+    position: absolute;
+    left: -180px;
+    top: 50%;
+    transform: translate(-20%,-50%);
+    scale: .7;
 }
 
 section.meeting img {
@@ -380,9 +389,45 @@ section.meeting .divider-sqr {
     left: 0;
 }
 
+section.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 14%;
+    background-image: url('/assets/bg.png');
+    background-size: cover;
+    background-position: center;
+    background-color: #182125;
+    margin: 8% 0;
+}
+
+section.banner h2 {
+    color: #C9A066;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+      font-family: "Cormorant Infant", Sans-serif;
+      text-align: center;
+      margin-bottom: 30px;
+}
+
+section.banner p {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+section.banner .sqr {
+    background-color: #C9A066;
+    width: 16px;
+    height: 16px;
+    rotate: 45deg;
+}
+
 footer {
     border-top: 1px solid #C6AC8359;
-    color: #d1d5d7;
     font-size: 15px;
     padding: 5% 0 1.5% 0;
 }
