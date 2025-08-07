@@ -362,7 +362,7 @@ section.meeting {
 }
 
 section.meeting:after {
-    content: url('/assets/vector.png');
+    content: url('/assets/vector.webp');
     position: absolute;
     left: -180px;
     top: 50%;
@@ -421,8 +421,8 @@ section.banner p {
 
 section.banner .sqr {
     background-color: #C9A066;
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     rotate: 45deg;
 }
 
