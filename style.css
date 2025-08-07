@@ -11,6 +11,7 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    line-height: 27px;
 }
 
 *:focus {
@@ -105,7 +106,6 @@ body {
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.15em;
-    line-height: 24pxs;
     text-transform: uppercase;
     padding: 14px 28px;
     text-decoration: none;
@@ -170,7 +170,6 @@ body {
     font-weight: 600;
     font-size: 30px;
     letter-spacing: 0;
-    line-height: 32px;
     color: #c9a066;
 }
 
@@ -187,26 +186,25 @@ body {
     font-size: 17px;
     font-weight: 400;
     letter-spacing: 0.34px;
-    line-height: 28px;
     width: 66%;
 }
 
-.main-view > button {
+section button {
     border: 1px solid #c9a066;
     background-color: transparent;
     cursor: pointer;
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.15em;
-    line-height: 24pxs;
     text-transform: uppercase;
     padding: 14px 28px;
     text-decoration: none;
     position: relative;
+    width: fit-content;
     transition: transform .3s;
 }
 
-.main-view > button:before {
+section button:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -221,11 +219,11 @@ body {
     animation-delay: 0.25s;
 }
 
-.main-view > button:hover::before {
+section button:hover::before {
     transform: translate(-12px, -12px);
 }
 
-.main-view > button:after {
+section button:after {
     content: '';
     position: absolute;
     inset: 0;
@@ -236,11 +234,11 @@ body {
     transition-delay: 0.15s;
 }
 
-.main-view > button:hover::after {
+section button:hover::after {
     transform: scale(1);
 }
 
-.main-view > button > span {
+section button > span {
     position: relative;
     z-index: 10;
 }
@@ -252,7 +250,6 @@ body {
     gap: 40px;
     text-align: center;
     padding: 100px 0;
-    line-height: 26px;
     color: #d1d5d7;
 }
 
@@ -271,7 +268,7 @@ body {
     font-weight: 300;
 }
 
-.lock > div > h4, .lock > div > h5 {
+div > h4, div > h5 {
   color: #C9A066;
   font-family: "Cormorant Infant", Sans-serif;
   font-size: 22px;
@@ -281,12 +278,13 @@ body {
   letter-spacing: 0.02em;
 }
 
-.lock > div > h3 {
+div > h3 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 24px;
+  line-height: 60px;
 }
 
 .lock > div > span {
@@ -301,7 +299,7 @@ body {
     margin: 0 auto;
 }
 
-.lock .divider {
+.divider {
     width: 67%;
     height: 1px;
     margin: 0 auto;
@@ -313,7 +311,7 @@ body {
     width: 20%;
 }
 
-.lock .divider-sqr {
+.divider-sqr {
     display: block;
     position: absolute;
     top: 50%;
@@ -327,7 +325,7 @@ body {
     rotate: 45deg;
 }
 
-.lock .divider-sqr:after {
+.divider-sqr:after {
     content: '';
     width: 10px;
     height: 10px;
@@ -354,9 +352,36 @@ section.interier-img {
     margin: 80px 0;
 }
 
+section.meeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 74%;
+    margin: 0 auto;
+}
+
+section.meeting img {
+    width: 100%;
+}
+
+section.meeting .text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 112%;
+}
+
+section.meeting .divider {
+    margin: 0;
+}
+
+section.meeting .divider-sqr {
+    left: 0;
+}
+
 footer {
     border-top: 1px solid #C6AC8359;
-    line-height: 27px;
     color: #d1d5d7;
     font-size: 15px;
     padding: 5% 0 1.5% 0;
@@ -405,7 +430,6 @@ footer div div *:not(p:nth-of-type(1)):not(p:nth-of-type(3)):not(p:nth-of-type(5
 
 footer .copyright {
     font-size: 16px;
-    line-height: 27px;
     letter-spacing: 0.02em;
     border-top: 1px solid #C6AC8359;
 }
