@@ -338,7 +338,21 @@ body {
     background-color: #C9A066;
 }
 
-/* Video */
+section.menu-img {
+    height: 470px;
+    background-image: url('/assets/indoor.webp');
+    background-position: center;
+    background-size: cover;
+    margin: 80px 0;
+}
+
+section.interier-img {
+    height: 662px;
+    background-image: url('/assets/indoor.webp');
+    background-position: center;
+    background-size: cover;
+    margin: 80px 0;
+}
 
 footer {
     border-top: 1px solid #C6AC8359;
