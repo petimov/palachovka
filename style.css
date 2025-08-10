@@ -12,6 +12,7 @@
     -ms-user-select: none;
     user-select: none;
     line-height: 27px;
+    font-size: 17px;
 }
 
 *:focus {
@@ -267,7 +268,7 @@ section button > span {
     font-weight: 300;
 }
 
-div > h4, div > h5 {
+h4, h5 {
   color: #C9A066;
   font-family: "Cormorant Infant", Sans-serif;
   font-size: 22px;
@@ -277,7 +278,7 @@ div > h4, div > h5 {
   letter-spacing: 0.02em;
 }
 
-div > h3 {
+h3 {
   font-family: "Playfair Display", serif;
   font-size: 40px;
   text-transform: uppercase;
@@ -300,7 +301,7 @@ div > h3 {
 
 .divider {
     width: 67%;
-    height: 1px;
+    height: .8px;
     margin: 0 auto;
     background-color: #C9A066;
     position: relative;
@@ -346,7 +347,7 @@ section.menu-img {
 
 section.interier-img {
     height: 662px;
-    background-image: url('/assets/indoor.webp');
+    background-image: url('/assets/indoor2.webp');
     background-position: center;
     background-size: cover;
     margin: 80px 0;
@@ -382,8 +383,9 @@ section.meeting .text {
     width: 112%;
 }
 
-section.meeting .divider {
+section.meeting .divider, section.menu-slider .divider {
     margin: 0;
+    width: 20%;
 }
 
 section.meeting .divider-sqr {
@@ -399,7 +401,7 @@ section.banner {
     background-size: cover;
     background-position: center;
     background-color: #182125;
-    margin: 8% 0;
+    margin: 8% 0 0 0;
 }
 
 section.banner h2 {
@@ -425,6 +427,29 @@ section.banner .sqr {
     width: 14px;
     height: 14px;
     rotate: 45deg;
+}
+
+section.menu-imgs {
+    padding: 0 10%;
+    display: flex;
+}
+
+section.menu-imgs img {
+    width: 100%;
+}
+
+section.menu-slider {
+    margin: 10% 0;
+}
+
+section.menu-slider > header {
+    padding: 0 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
 }
 
 footer {
@@ -453,12 +478,6 @@ footer div div {
     justify-content: center;
     width: 30%;
     padding: 0 38px;
-}
-
-.divider {
-    background-color: #C9A066;
-    width: 20%;
-    height: 2px;
 }
 
 footer div div h5 {
