@@ -148,9 +148,9 @@ body {
     height: 100vh;
     background-image: url('/assets/indoor.webp');
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
-    animation: zoom-in;
-    transition: 10s;
+    animation: zoom-in 10s;
 }
 
 @keyframes zoom-in {
@@ -257,14 +257,14 @@ section button > span {
 .lock {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 40px;
+    align-items: flex-start;
+    gap: 7%;
     text-align: center;
     padding: 100px 0;
 }
 
 .lock > img {
-    max-width: 25%;
+    max-width: 30%;
     border-top-left-radius: 45%;
     border-top-right-radius: 45%;
 }
